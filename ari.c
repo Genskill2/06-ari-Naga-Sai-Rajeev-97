@@ -1,3 +1,8 @@
+#include <cs50.h>
+#include <string.h>
+#include <math.h>
+#include <ctype.h>
+
 string ari(string s)
 {
     string ret; //returning a string of required grade of reader
