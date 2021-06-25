@@ -9,7 +9,7 @@ string ari(string s)
     //initialisation of counts
     int cnt_let=0; //letter count
     int cnt_word=1; //word count is calculated by no.of spaces but no. of words =no.of spaces +1
-    int cnt_sent=0; //sentence count
+    int cnt_sent=1; //sentence count
     for(int i=0;i<strlen(s);i++)
     {
         //checking no.of characters
@@ -23,7 +23,7 @@ string ari(string s)
             cnt_word+=1;
         }
         //checking no. of sentences
-        if(s[i]=='.'||s[i]=='!'||s[i]=='?')
+        if((s[i]=='.'&&s[i+1]==' ')||s[i]=='!'||s[i]=='?')
         {
             cnt_sent+=1;
         }
@@ -80,6 +80,9 @@ string ari(string s)
             ret="College student";
             break;
         case 14: 
+            ret="Professor";
+            break;
+        default:
             ret="Professor";
             break;
     }
