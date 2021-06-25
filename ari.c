@@ -38,61 +38,50 @@ string ari(string s)
     float read=cw+ws-21.43;
     int ari= (int)ceil(read);//assigning ARI
     // setting return string as per ARI
-    if (ari ==1 )
+    switch (ari)
     {
-        ret="Kindergarten";
-    }
-    else if(ari ==2 )
-    {
-        ret="First/Second Grade";
-    }
-    else if(ari ==3 )
-    {
-        ret="Third Grade";
-    }
-    else if(ari ==4 )
-    {
-        ret="Fourth Grade";
-    }
-    else if(ari ==5 )
-    {
-        ret="Fifth Grade";
-    }
-    else if(ari ==6 )
-    {
-        ret="Sixth Grade";
-    }
-    else if(ari ==7 )
-    {
-        ret="Seventh Grade";
-    }
-    else if(ari ==8 )
-    {
-        ret="Eighth Grade";
-    }
-    else if(ari ==9 )
-    {
-        ret="Ninth Grade";
-    }
-    else if(ari ==10 )
-    {
-        ret="Tenth Grade";
-    }
-    else if(ari ==11 )
-    {
-        ret="Eleventh Grade";
-    }
-    else if(ari ==12 )
-    {
-        ret="Twelfth Grade";
-    }
-    else if(ari ==13 )
-    {
-        ret="College student";
-    }
-    else if(ari ==14 )
-    {
-        ret="Professor"; 
+        case 1: 
+            ret="Kindergarten";
+            break;
+        case 2: 
+            ret="First/Second Grade";
+            break;
+        case 3: 
+            ret="Third Grade";
+            break;
+        case 4: 
+            ret="Fourth Grade";
+            break;
+        case 5: 
+            ret="Fifth Grade";
+            break;
+        case 6: 
+            ret="Sixth Grade";
+            break;
+        case 7: 
+            ret="Seventh Grade";
+            break;
+        case 8: 
+            ret="Eighth Grade";
+            break;
+        case 9: 
+            ret="Ninth Grade";
+            break;
+        case 10: 
+            ret="Tenth Grade";
+            break;
+        case 11: 
+            ret="Eleventh Grade";
+            break;
+        case 12: 
+            ret="Twelfth Grade";
+            break;
+        case 13: 
+            ret="College student";
+            break;
+        case 14: 
+            ret="Professor";
+            break;
     }
     return ret;
 }
