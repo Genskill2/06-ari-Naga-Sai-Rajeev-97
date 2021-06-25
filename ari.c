@@ -92,7 +92,7 @@ string ari(string s)
     }
     else if(ari ==14 )
     {
-        ret="Professor";
+        ret="Professor"; 
     }
     return ret;
 }
